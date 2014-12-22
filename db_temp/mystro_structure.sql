@@ -22,3 +22,12 @@ CREATE TABLE payments(
   payment_date DATE NOT NULL,
   method VARCHAR (255) NOT NULL
 );
+
+CREATE TABLE locations(
+  id SERIAL PRIMARY KEY,
+  description VARCHAR (255),
+  address VARCHAR (255) NOT NULL,
+  city VARCHAR (255) NOT NULL,
+  state VARCHAR (2) NOT NULL,
+  zip VARCHAR (5) NOT NULL,
+);
