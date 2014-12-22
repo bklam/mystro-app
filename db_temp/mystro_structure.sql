@@ -41,6 +41,18 @@ CREATE TABLE payments(
   method VARCHAR (255) NOT NULL
 );
 
+CREATE TABLE lessons(
+  id SERIAL PRIMARY KEY,
+  student_id INTEGER NOT NULL,
+  teacher_id INTEGER NOT NULL,
+  location_id INTEGER NOT NULL,
+  lesson_type_id INTEGER NOT NULL,
+  date DATE NOT NULL,
+  start_time TIME WITH TIME ZONE NOT NULL,
+  end_time TIME WITH TIME ZONE NOT NULL,
+  total_cost INTEGER DEFAULT 0 NOT NULL
+);
+
 CREATE TABLE locations(
   id SERIAL PRIMARY KEY,
   description VARCHAR (255),
