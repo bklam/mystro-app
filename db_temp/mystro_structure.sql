@@ -17,3 +17,21 @@ CREATE TABLE students(
   outstanding_balance INTEGER DEFAULT 0 NOT NULL,
   active BOOLEAN DEFAULT 't' NOT NULL
 );
+
+CREATE TABLE families(
+  id SERIAL PRIMARY KEY,
+  family_name VARCHAR (255) NOT NULL,
+  location_id INTEGER NOT NULL,
+  email VARCHAR (255),
+  phone VARCHAR (10),
+  total_balance INTEGER NOT NULL
+  );
+
+CREATE TABLE teachers(
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR (255) NOT NULL,
+  last_name VARCHAR (255) NOT NULL,
+  location_id INTEGER NOT NULL,
+  email VARCHAR (255),
+  phone VARCHAR (10),
+);
