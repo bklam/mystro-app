@@ -3,11 +3,15 @@
 ALTER TABLE students
 ADD CONSTRAINT students_families_id_fkey
 FOREIGN KEY (family_id) REFERENCES families (id)
-ON UPDATE CASCADE ON DELETE RESTRICT
+ON UPDATE CASCADE ON DELETE RESTRICT;
 
 -- add constraint for the teacher_id in students table
 
 -- add constraints for families table
+
+ALTER TABLE payments
+ADD CONSTRAINT check_methods
+CHECK (method IN ('check', 'cash', 'credit card'));
 
 -- -- this constraint deals with note 8
 -- ALTER TABLE medicines
