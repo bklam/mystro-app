@@ -1,0 +1,10 @@
+1. As a teacher, I want to login to my dashboard so that I can view my schedule and other information
+
+- be able to login and authenticate (using a gem, probably devise)
+- generate scaffolding and new app
+- using plugin, show schedule on dashboard page
+- options for calendar display (day week month) on dashboard
+- be able to set default setting for calendar display
+- sidebar with access to other pages (my students, expenses, etc.)
+- news feed with important notifications from past 24 hours and upcoming 24 hours
+-
