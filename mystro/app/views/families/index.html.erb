@@ -1,0 +1,35 @@
+<h1>Listing families</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Family name</th>
+      <th>Location</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Total balance</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @families.each do |family| %>
+      <tr>
+        <td><%= family.family_name %></td>
+        <td><%= family.location_id %></td>
+        <td><%= family.email %></td>
+        <td><%= family.phone %></td>
+        <td><%= family.total_balance %></td>
+        <td><%= link_to 'Show', family %></td>
+        <td><%= link_to 'Edit', edit_family_path(family) %></td>
+        <td><%= link_to 'Destroy', family, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Family', new_family_path %>
