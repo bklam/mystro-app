@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @lesson.student_id %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @lesson.teacher_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @lesson.location_id %>
+</p>
+
+<p>
+  <strong>Lesson type:</strong>
+  <%= @lesson.lesson_type_id %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @lesson.date %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @lesson.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @lesson.end_time %>
+</p>
+
+<p>
+  <strong>Total cost:</strong>
+  <%= @lesson.total_cost %>
+</p>
+
+<%= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<%= link_to 'Back', lessons_path %>

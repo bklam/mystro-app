@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lesson_type_id: 1
+  start_date: 2014-12-23 16:06:01
+  end_time: 2014-12-23 16:06:01
+  rate: 1
+
+two:
+  lesson_type_id: 1
+  start_date: 2014-12-23 16:06:01
+  end_time: 2014-12-23 16:06:01
+  rate: 1

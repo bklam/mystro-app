@@ -1,4 +1,10 @@
 Mystro::Application.routes.draw do
+  resources :teachers
+
+  resources :payments
+
+  resources :lessons
+
   resources :students
 
   get "home/index"
