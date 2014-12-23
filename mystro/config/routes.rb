@@ -1,5 +1,8 @@
 Mystro::Application.routes.draw do
   get 'home', to: 'home#index', as: :home
+
+  # This sets the root of our site  
+  root 'home#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
