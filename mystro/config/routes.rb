@@ -1,4 +1,6 @@
 Mystro::Application.routes.draw do
+  resources :students
+
   get "home/index"
   get 'home', to: 'home#index', as: :home
 
