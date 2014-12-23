@@ -5,6 +5,10 @@ Mystro::Application.routes.draw do
 
   resources :lessons
 
+  resources :locations
+
+  resources :families
+
   resources :students
 
   get "home/index"
