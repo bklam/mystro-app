@@ -1,0 +1,103 @@
+.navbar-outer {
+  padding: 20px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 54px;
+  margin-left: 54px;
+}
+
+body {
+  background: url('background.png') no-repeat scroll;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.row {
+  padding-left: 67px;
+  padding-right: 67px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+@font-face {
+  font-family: 'jungleFont';
+  src: url('/assets/jungle.eot');
+  src: url('/assets/jungle.woff') format('woff'),
+       url('/assets/jungle.ttf') format('truetype'),
+       url('/assets/jungle.svg#webfont') format('svg');
+}
+
+div > h1 {
+  font-family: jungleFont;
+  font-size: 9vw ;
+  margin-top: 0px ;
+  margin-bottom: 5px ;
+  margin-left: 40px ;
+  font-weight: normal;
+  font-style: normal;
+  color: #DBDBDB;
+}
+
+div > h3 {
+  font-family: jungleFont;
+  font-size: 4vw;
+  margin-top: 0px ;
+  margin-bottom: 0px ;
+  margin-left: 40px ;
+  font-weight: normal;
+  font-style: normal;
+  color: #DBDBDB;
+}
+
+.navlinks {
+  font-family: jungleFont;
+  font-size: 27px ;
+  color: #424242;
+}
+
+.navlinks2 {
+  font-family: jungleFont;
+  font-size: 18px ;
+  color: #424242;
+}
+
+.footlinks {
+  font-family: jungleFont;
+  font-size: 14px ;
+  color: #DBDBDB;
+}
+
+.navbar-default {
+  background-color: #DBDBDB;
+  border-color: #e7e7e7;
+}
