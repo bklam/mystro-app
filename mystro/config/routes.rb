@@ -1,4 +1,5 @@
 Mystro::Application.routes.draw do
+  get "home/index"
   get 'home', to: 'home#index', as: :home
 
   # This sets the root of our site  
