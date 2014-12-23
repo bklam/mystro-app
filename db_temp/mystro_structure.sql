@@ -61,3 +61,17 @@ CREATE TABLE locations(
   state VARCHAR (2) NOT NULL,
   zip VARCHAR (5) NOT NULL
 );
+
+CREATE TABLE lesson_rates_history(
+  id SERIAL PRIMARY KEY,
+  lesson_type_id INTEGER NOT NULL,
+  start_date DATE,
+  end_date DATE,
+  rate INTEGER
+);
+
+CREATE TABLE lesson_types(
+  id SERIAL PRIMARY KEY,
+  description VARCHAR (255),
+  duration INTEGER NOT NULL
+);
