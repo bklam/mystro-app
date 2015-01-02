@@ -3,7 +3,6 @@ class CreateStudents < ActiveRecord::Migration
     create_table :students do |t|
       t.integer :student_id
       t.integer :family_id
-      t.integer :teacher_id
       t.string :first_name
       t.string :last_name
       t.date :date_of_birth
